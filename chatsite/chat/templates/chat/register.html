@@ -1,0 +1,13 @@
+{% extends 'chat/_base.html' %}
+
+{% block content %}
+
+<h2>Cadastre-se</h2>
+<p>Preencha todos os campos para ficar legal.</p>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Cadastrar</button>
+</form>
+
+{% endblock %}

@@ -13,16 +13,16 @@
         <h1>Meu Chat Django</h1>
     </header>
     <nav>
-        <a href="/">Início</a>
-        <a href="/about">Sobre</a>
-        <a href="/contacts">Contato</a>
-        <a href="/policies">privacidade</a>
+        <a href="{% url 'index' %}">Início</a>
+        <a href="{% url 'about' %}">Sobre</a>
+        <a href="{% url 'contact' %}">Contato</a>
+        <a href="{% url 'success' %}">Cadastre-se</a>
     </nav>
     <main>
         {% block content %}{% endblock %}
     </main>
     <footer>
-        <p>&copy; 2024 Vinicius Irapuã.</p>
+        <p>&copy; 2024 Joca da Silva.</p>
     </footer>
 </body>
 </html>
